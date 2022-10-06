@@ -1,3 +1,8 @@
+body {
+  background-image: url("../img/fire.jpg");
+  background-position: center;
+  background-size: cover;
+}
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: red;
