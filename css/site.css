@@ -4,3 +4,6 @@ p {
   font-style: oblique;
   font-family: fantasy;
 }
+#my-portrait {
+    width: 500px;
+}
