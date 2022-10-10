@@ -7,3 +7,15 @@ p {
 #my-portrait {
     width: 500px;
 }
+ul {
+  color: yellow;
+  font-size: 150%;
+  font-style: oblique;
+  font-family: fantasy;
+}
+a {
+  color: blue;
+  font-size: 125%;
+  font-style: oblique;
+  font-family: fantasy;
+}
