@@ -1,5 +1,11 @@
+body {
+  background-color: lightgreen;
+}
+#Hello{
+  font-size: 200%
+}
 p {
-  color: green;
+  color: brown;
   font-size: 150%;
   font-style: oblique;
   font-family: fantasy;
@@ -14,8 +20,21 @@ ul {
   font-family: fantasy;
 }
 a {
-  color: blue;
+  color: black;
   font-size: 125%;
   font-style: oblique;
-  font-family: fantasy;
+}
+h2 {
+  font-size: 400%;
+}
+.container {
+  border 2 px solid #ccc;
+    padding: 10px;
+  width: 20em;
+}
+#body{
+  width: 900px;
+  background-color: lightblue;
+  padding: 5px;
+  margin-bottom: 100em;
 }
