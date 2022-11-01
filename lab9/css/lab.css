@@ -7,3 +7,12 @@ h1 {
   font-size: 300%;
   font-style: oblique;
 }
+#content {
+  width: 803px;
+  height: 1000;
+  margin: auto;
+  padding: 4px 6px;
+  float: center;
+  background-color: lightgray;
+  outline: 1px solid black;
+}
