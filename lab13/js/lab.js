@@ -3,61 +3,45 @@
  * Created:   11/14/22
  * license: Public Domain
  **/
-
-
  maxFactors = 4;
 
  outputEl = document.getElementById("output");
 
- // get the values from the webpage and write them in an object
- // this expects to have input fields with ids num0, text0, num1, text1, etc
- // returns an object that looks like this:
- //      {3: "Fizz", 5: "Buzz", 7: "Boom"}
- function getFactorObj() {
-     var factorObj = {};
+ function getFactorobj() {
+     var Factorobj = {};
      for (var factor=0; factor<maxFactors; factor++) {
-         numId = "num" + factor;
-         textId = "text" + factor;
-         numValue = document.getElementById(numId).value;
-         textValue = document.getElementById(textId).value;
-         console.log(factor + ") num:", numValue, "text:", textValue)
-         // if either value is blank, don't use it
-         if (numValue && textValue) {
-             factorObj[numValue] = textValue;
+         numEl = "num" + factor;
+         textEl = "text" + factor;
+         NumVal = document.getElementById(numEl).value;
+         TextVal = document.getElementById(textEl).value;
+         console.log(factor + ") num:", NumVal, "text:", TextVal)
+         if (NumVal && TextVal) {
+             Factorobj[NumVal] = TextVal;
          }
      }
-     return factorObj;
+     return Factorobj;
  }
 
- function outputToPage(str) {
+ function PgOutput(str) {
      newEl = document.createElement("p");
      newEl.innerHTML = str;
      outputEl.appendChild(newEl);
  }
 
- // given a number and an object that looks like this:
- //      {3: "Fizz", 5: "Buzz", 7: "Boom"}
- // loops over the numbers and outputs the number and the matching text
- // for factors
- function fizzBuzzBoom(maxNums, factorObj) {
-     // iterate over all of out numbers
+
+ function FBZ(maxNums, Factorobj) {
      for (var num=0; num<maxNums; num++) {
          debugger;
-         // reset output string
-         var outputStr = "";
-         // iterate over the factors we got from the html
-         for (var factor in factorObj) {
-             // check to see if this num is a multiple of factor
+         var Stroutput = "";
+         for (var factor in Factorobj) {
              if (num % factor == 0) {
-                 // if yes, than add the text to output string
-                 outputStr += factorObj[factor];
+                 Stroutput += Factorobj[factor];
              }
          }
-         // now if we have words in outputStr, format it like this " - FizzBuzz!"
-         if (outputStr) {
-             outputStr = " - " + outputStr;
+         if (Stroutput) {
+             Stroutput = " - " + Stroutput;
          }
-         outputToPage(num.toString() + outputStr)
+         PgOutput(num.toString() + Stroutput)
      }
  }
 
@@ -72,15 +56,13 @@
          reportError("You must provide a maximum");
          return;
      }
-     var factorObj = getFactorObj();
-     console.log("factorObj:", factorObj);
-     if (Object.keys(factorObj).length === 0) {
+     var Factorobj = getFactorobj();
+     console.log("Factorobj:", Factorobj);
+     if (Object.keys(Factorobj).length === 0) {
          reportError("You must provide at least one factor and text");
          return;
      }
-     // clear error if there is one
      outputEl.innerHTML = "";
-     fizzBuzzBoom(max, factorObj);
+     FBZ(max, Factorobj);
      outputEl.classList.add("cols");
  })
- System.out.printf("%-30.30s  %-30.30s%n", v1, v2);
