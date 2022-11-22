@@ -1,0 +1,22 @@
+#output {
+  font-size: 20px;
+  color: red;
+}
+#content {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 4px 6px;
+  float: center;
+  background-color: green;
+  outline: 1px solid black;
+}
+p {
+font-size: 25px;
+color: yellow;
+}
+
+h1,h2 {
+font-size: 25px;
+color: red;
+}
