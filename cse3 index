@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angel's Homepage</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+		<div class="container">
+		<div id="body">
+			<div id="Hello">
+				<h1>HELLO !
+				</h1>
+			</div>
+		<p>
+			<img id="my-portrait" src="img/Family.jpg" style="float:left">
+			My name is Angelito Aquino.<br>
+			Angel if you would. <br>
+			I am L.A born and raised.<br>
+			I am the second person in my family to study in a university.<br>
+			I enjoy building plastic models and painting them.<br>
+			I enjoy painting in general.<br>
+			I am the youngest with an older brother and sister.<br>
+			I have a 3 year old chinchilla but he is a bit mean.<br>
+			His name is Chilli.<br>
+		</p>
+
+		<div class="Chinchillin">
+			<p1>
+				<a href="https://bit.ly/3Etkax9">A link to my chinchilla playing</a>
+				</p1>
+			</div>
+
+</body>
+</html>
